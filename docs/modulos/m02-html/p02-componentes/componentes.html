@@ -384,29 +384,34 @@
         title="Página de prueba del sitio de ConSentidos"
         width="600" height="240" loading="lazy"&gt;&lt;/iframe&gt;</code></pre>
     </article>
+<article id="iframe-terceros">
+  <h3>Marco incrustado de terceros <code>&lt;iframe&gt;</code></h3>
+  <p>Incrusta contenido externo (como mapas o reproductores) aplicando restricciones de seguridad para proteger la página.</p>
+  <div class="demo">
+    <iframe
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-80.9950%2C8.0900%2C-80.9650%2C8.1100&layer=mapnik"
+  title="Mapa de Santiago de Veraguas"
+  width="600"
+  height="340"
+  loading="lazy"
+  style="border: 1px solid #ccc;">
+</iframe>
 
-                       <article id="iframe-terceros">
-                    <h3>Marco incrustado de terceros <code>&lt;iframe&gt;</code></h3>
-                    <p>Incrusta contenido externo (como mapas o reproductores) aplicando restricciones de seguridad para proteger la página.</p>
+  </div>
+  <pre><code>&lt;iframe
+  src="https://openstreetmap.org"
+  title="Mapa de Santiago de Veraguas"
+  width="600"
+  height="340"
+  loading="lazy"
+  style="border: 1px solid #ccc;"&gt;
+&lt;/iframe&gt;</code></pre>
+  <aside>
+    <p><strong>Seguridad:</strong> <code>title</code> es obligatorio en todo <code>iframe</code>.</p>
+  </aside>
+</article>
 
-                    <div class="demo">
-                        <iframe src="https://openstreetmap.org"
-                                title="Mapa de Santiago de Veraguas, donde está la clínica"
-                                width="600" height="340" loading="lazy"
-                                referrerpolicy="no-referrer"
-                                sandbox="allow-scripts"></iframe>
-                    </div>
 
-                    <pre><code>&lt;iframe src="https://openstreetmap.org"
-        title="Mapa de Santiago de Veraguas, donde está la clínica"
-        width="600" height="340" loading="lazy"
-        referrerpolicy="no-referrer"
-        sandbox="allow-scripts"&gt;&lt;/iframe&gt;</code></pre>
-
-                    <aside>
-                        <p><strong>Buena práctica y seguridad:</strong> En contenido de terceros, usa <code>referrerpolicy="no-referrer"</code> para no enviar la dirección de tu página al sitio incrustado y restringe permisos con <code>sandbox</code> habilitando solo lo indispensable (como <code>allow-scripts</code>). Nunca combines <code>allow-scripts</code> con <code>allow-same-origin</code> en contenido ajeno, ya que juntos anulan el aislamiento de seguridad.</p>
-                    </aside>
-                </article>
 
 
 
