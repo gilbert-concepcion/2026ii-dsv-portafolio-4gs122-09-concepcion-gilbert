@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+  content="default-src 'self';
+           script-src 'self';
+           style-src 'self' https://googleapis.com;
+           font-src https://gstatic.com;
+           img-src 'self';
+           media-src 'self';
+           object-src 'self';
+           frame-src 'self' https://openstreetmap.org;
+           base-uri 'self';
+           form-action 'self'">
+
+  <meta name="description" content="Página auxiliar para practicar rutas relativas que suben un nivel.">
+  <title>Página de prueba | Clínica Veterinaria ConSentidos</title>
+  <link rel="icon" href="../assets/img/logo-consentidos.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/consentidos.css">
+</head>
+<body>
+  <header>
+    <img src="../assets/img/logo-consentidos.svg" alt="" width="48" height="48">
+    <hgroup>
+      <h1>Página de prueba</h1>
+      <p>Clínica Veterinaria ConSentidos</p>
+    </hgroup>
+    <p>Gilbert Concepción<br>4GS122-09</p>
+  </header>
+
+  <main id="contenido">
+    <p>Esta página auxiliar vive dentro de la subcarpeta <code>paginas/</code> y sirve para comprobar cómo funcionan las rutas relativas que suben un nivel mediante <code>../</code>.</p>
+    <p>También la utilizaremos incrustada dentro de un <code>&lt;iframe&gt;</code> en la guía de componentes del sitio.</p>
+
+    <figure>
+      <img src="../assets/img/luna.svg"
+           alt="Ilustración de Luna, una gata gris atigrada, sentada"
+           width="200" height="200" loading="lazy">
+      <figcaption>La imagen también se alcanza subiendo un nivel.</figcaption>
+    </figure>
+
+    <p><a href="../index.html">Volver al inicio del sitio</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Clínica Veterinaria ConSentidos</p>
+  </footer>
+</body>
+</html>
